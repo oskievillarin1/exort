@@ -1,18 +1,6 @@
 
 jQuery(document).ready(function($){
 
-    // $(document).scroll(function(){
-    //     var hT = $('.about').offset().top + 80;
-    //     var pos = $(this).scrollTop();
-    //
-    //     if( pos >= hT) {
-    //         $('.navbar').css('background-color', '#202020');
-    //         $('.navbar').css('padding', '0.5em 0');
-    //     } else {
-    //         $('.navbar').css('background-color', 'transparent');
-    //     }
-    // })
-
     //set the height in service box
     var h = $('.service-wrap').height();
     $('.service-image').height(h);
@@ -22,6 +10,58 @@ jQuery(document).ready(function($){
     var txt = $('.blog-grid-text').text();
     if(txt.length > 240) {
         $('.blog-grid-text').text(txt.substring(0,235) + ' ...');
+    }
+
+    //page scrolling feature
+    $(function() {
+        $('.page-scroll a').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 2000, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+
+    var lastId,
+    topMenu = $(".menu"),
+    topMenuHeight = topMenu.outerHeight(),
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+    //back to top component
+    $( window ).scroll( function() {
+    	if ( $( this ).scrollTop() > 800 ) {
+    		$( '.back-to-top' ).addClass( 'show-back-to-top' );
+    	} else {
+    		$( '.back-to-top' ).removeClass( 'show-back-to-top' );
+    	}
+    });
+    $( '.back-to-top' ).click( function() {
+    	$( 'html, body' ).animate( { scrollTop : 0 }, 1500, "swing" );
+    	return false;
+    });
+    $('.back-to-top').each(function() {
+        animationHover(this, 'bounce');
+    });
+
+    function animationHover(element, animation){
+        element = $(element);
+        element.hover(
+            function() {
+                element.addClass('animated ' + animation);
+            },
+            function(){
+                //wait for animation to finish before removing classes
+                window.setTimeout( function(){
+                    element.removeClass('animated ' + animation);
+                }, 2000);
+            });
     }
 
     //initialize masonry grid
@@ -49,8 +89,8 @@ jQuery(document).ready(function($){
         loop: true,
         dots: false,
         lazyLoad: true,
-        //autoplay: true,
-        autoplayTimeout: 6000,
+        autoplay: true,
+        autoplayTimeout: 9000,
         autoplaySpeed: 3000,
         navSpeed: 2500,
         mouseDrag: false
@@ -118,7 +158,7 @@ jQuery(document).ready(function($){
 
     sr.reveal('.stats-wrap', {
         reset: true,
-        duration: 2000,
+        duration: 1000,
         beforeReveal: function (domEl) {
             $('.stats-count').each(function () {
                 $(this).prop('Counter',0).animate({

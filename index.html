@@ -21,19 +21,20 @@
                     <div class="row">
                         <div class="menu">
                             <ul id="menu" class="menu-links">
-                                <li><a class="active" href="#">home</a></li>
-                                <li><a href="#">about us</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">pricing</a></li>
-                                <li><a href="#">team</a></li>
-                                <li><a href="#">blog</a></li>
-                                <li><a href="#">contact</a></li>
+                                <li class="page-scroll"><a class="active" href="#home">home</a></li>
+                                <li class="page-scroll"><a href="#about">about us</a></li>
+                                <li class="page-scroll"><a href="#service">service</a></li>
+                                <li class="page-scroll"><a href="#portfolio">portfolio</a></li>
+                                <li class="page-scroll"><a href="#pricing">pricing</a></li>
+                                <li class="page-scroll"><a href="#team">team</a></li>
+                                <li class="page-scroll"><a href="#blog">blog</a></li>
+                                <li class="page-scroll"><a href="#contact">contact</a></li>
                             </ul>
                         </div>
                         <div class="logo">
                             <div class="logo-wrap">
                                 <a href="#">
-                                    <img class="img-responsive" src="images/Logo.png" alt="Logo">
+                                    <img class="img-responsive" src="images/logo.png" alt="Logo">
                                 </a>
                             </div>
                         </div>
@@ -92,11 +93,11 @@
                     </div>
                     <div class="slider-item">
                         <div class="video-wrap">
-                            <div class="video-overlay"></div>
+                            <!-- <div class="video-overlay"></div> -->
                             <video id="video-background" autoplay loop muted>
                               <source src="http://zplex.gq/files/madcowfilms.webm" type="video/webm">
                             </video>
-                            <div class="video-inner">
+                            <!-- <div class="video-inner">
                                 <div class="slider-heading">
                                     <h3>Our Clients Are Our First Priority</h3>
                                     <h1>INVOKER INVOKER</h1>
@@ -109,7 +110,7 @@
                                     <button type="button" class="btn theme-btn">get started now</button>
                                     <button type="button" class="btn">learn more</button>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="slider-item" style="background-image: url('images/slider4.jpg');">
@@ -138,8 +139,13 @@
 
         <!-- main content wrap -->
         <div class="main-content">
+            <!-- back to top component -->
+            <div class="back-to-top">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </div>
+
             <!-- About Us Section -->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="about-wrap">
                     <div class="container">
                         <div class="row">
@@ -188,7 +194,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="history-image sequence">
-                                    <img class="grow img-responsive" src="images/Monitor.png" alt="">
+                                    <img class="grow img-responsive" src="images/monitor.png" alt="">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
@@ -210,7 +216,7 @@
                 </div>
             </section>
             <!-- Service Wrap -->
-            <section class="service">
+            <section id="service" class="service">
                 <div class="service-wrap">
                     <div class="controls">
                         <div class="controls-inner">
@@ -262,7 +268,7 @@
                 </div>
             </section>
             <!-- Works Section -->
-            <section class="work">
+            <section id="portfolio" class="work">
                 <div class="work-wrap">
                     <div class="container">
                         <div class="row">
@@ -597,7 +603,7 @@
                 </div>
             </section>
             <!-- Pricing Section -->
-            <section class="pricing">
+            <section id="pricing" class="pricing">
                 <div class="pricing-wrap">
                     <div class="container">
                         <div class="row">
@@ -673,7 +679,7 @@
                 </div>
             </section>
             <!-- Team Section -->
-            <section class="team">
+            <section id="team" class="team">
                 <div class="team-wrap">
                     <div class="heading-center">
                         <h2>OUR TEAM</h2>
@@ -737,7 +743,7 @@
                 </div>
             </section>
             <!-- Blog Section -->
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="blog-wrap">
                     <div class="heading-center">
                         <h2>OUR BLOG</h2>
@@ -759,7 +765,7 @@
                                             <h4>T-Shirt Design</h4>
                                             <hr>
                                             <p class="blog-grid-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.</p>
-                                            <a href="#">Read More</a>
+                                            <a href="#">Read More &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-grid-item">
@@ -773,7 +779,7 @@
                                             <h4>T-Shirt Design</h4>
                                             <hr>
                                             <p class="blog-grid-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.</p>
-                                            <a href="#">Read More</a>
+                                            <a href="#">Read More &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-grid-item">
@@ -782,7 +788,7 @@
                                             <h4>T-Shirt Design</h4>
                                             <hr>
                                             <p class="blog-grid-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.</p>
-                                            <a href="#">Read More</a>
+                                            <a href="#">Read More &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="blog-grid-image">
                                             <div class="box-wrap">
@@ -796,7 +802,7 @@
                                             <h4>T-Shirt Design</h4>
                                             <hr>
                                             <p class="blog-grid-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.</p>
-                                            <a href="#">Read More</a>
+                                            <a href="#">Read More &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="blog-grid-image">
                                             <div class="box-wrap">
@@ -810,14 +816,87 @@
                     </div>
                 </div>
             </section>
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <div class="contact-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="heading-center">
+                                <h2>KEEP IN TOUCH</h2>
+                                <p>Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.</p>
+                                <div class="theme-bar theme-bar-heading"></div>
+                            </div>
+                            <div class="contact-grid">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-5">
+                                        <div class="contact-info">
+                                            <div class="text-wrap">
+                                                <h4>OUR ADDRESS</h4>
+                                                <p>House #13, Street road, Sydney<br> 2310 Australia</p>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <h4>CALL US</h4>
+                                                <p>+ 880 168 109 1425</p>
+                                                <p>+ 0216809142</p>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <h4>EMAIL US</h4>
+                                                <p>contactus@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7">
+                                        <div class="contact-form">
+                                            <input type="text" name="" placeholder="Name">
+                                            <input type="text" name="" placeholder="Email">
+                                            <input type="text" name="" placeholder="Subject">
+                                            <textarea name="name" rows="6" cols="40" placeholder="Message"></textarea>
+                                            <button type="submit" class="btn theme-btn">SEND MESSAGE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Promo Section -->
+            <section class="promo">
+                <div class="promo-wrap">
+                    <p class="heading">Let's Get Started Now. <b>It's FREE!</b></p>
+                    <p class="subheading">30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No catches.</p>
+                    <a href="#" class="btn theme-btn">START FREE TRIAL</a>
+                </div>
+            </section>
         </div>
 
         <!-- footer wrap -->
         <footer>
-
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-links">
+                            <ul>
+                                <li><img src="images/facebook.png" alt=""></li>
+                                <li><img src="images/twitter.png" alt=""></li>
+                                <li><img src="images/rss.png" alt=""></li>
+                                <li><img src="images/googleplus.png" alt=""></li>
+                                <li><img src="images/linkedin.png" alt=""></li>
+                                <li><img src="images/skype.png" alt=""></li>
+                                <li><img src="images/tumblr.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="footer-credit">
+                            <p>Oskie Villarin © All Rights Reserved</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="js/vendor.min.js"></script>
         <script src="js/main.js"></script>
     </body>
